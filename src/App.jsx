@@ -428,7 +428,7 @@ function BookingPage({ setPage }) {
                   <optgroup key={group.category} label={group.category}>
                     {group.items.map(item => (
                       <option key={`${group.category}-${item.name}`} value={`${group.category} — ${item.name}`}>
-                        {item.name} — ${item.price}
+                        {`${item.name} — $${item.price}`}
                       </option>
                     ))}
                   </optgroup>
